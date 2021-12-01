@@ -1,7 +1,7 @@
 package hello.core.member
 
 class MemberServiceImpl(
-    private val repository: MemberRepository
+    private final val repository: MemberRepository
 ) : MemberService {
 
     override fun join(member: Member) {

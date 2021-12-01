@@ -14,6 +14,7 @@ class OrderServiceImplTest : FunSpec({
         orderService = appConfig.orderService()
         memberService = appConfig.memberService()
     }
+
     test("createOrder") {
         val memberId = 1L
         val member = Member(memberId, "memberA", Grade.VIP)
@@ -23,5 +24,4 @@ class OrderServiceImplTest : FunSpec({
         order.discountPrice shouldBe 1000
         order.calculatePrice() shouldBe 9000
     }
-
 })

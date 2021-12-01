@@ -6,8 +6,8 @@ import hello.core.member.Member
 import hello.core.member.MemberRepository
 
 class OrderServiceImpl(
-    private val repository: MemberRepository,
-    private val discountPolicy: DiscountPolicy
+    private final val repository: MemberRepository,
+    private final val discountPolicy: DiscountPolicy
 ) : OrderService {
 
 
